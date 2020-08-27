@@ -1,0 +1,5 @@
+STRIPE_API_KEY="sk_test_your sk key here"
+
+STRIPE_PUBLISHABLE_KEY=pk_test_your pk key here
+
+STRIPE_SECRET_KEY=sk_test_1234
