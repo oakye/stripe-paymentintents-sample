@@ -27,62 +27,63 @@ How to run the code locally
 
 Follow the steps below to run locally.
 
->>>>> Installing and cloning the sample manually
+#### Installing and cloning the sample manually
 
 Manually clone and configure the sample. From a terminal screen, type:
 
 git clone https://github.com/oakye/stripe-paymentintents-sample.git
 
->>>>> Copy the .envexample file into a file named .env in the folder of the server you want to use. For example:
+#### Copy the .envexample file into a file named .env in the folder of the server you want to use. For example:
 
 cp .envexample react-app/.env
 
->>>>> You will need a Stripe account in order to run the demo. Once you set up your account, go to the Stripe Dashboard > Developers > API keys to find your API keys.
+#### You will need a Stripe account in order to run the demo. Once you set up your account, go to the Stripe Dashboard > Developers > API keys to find your API keys.
 
-STRIPE_PUBLISHABLE_KEY=<replace-with-your-publishable-key>
-STRIPE_SECRET_KEY=<replace-with-your-secret-key>
+`STRIPE_PUBLISHABLE_KEY=<replace-with-your-publishable-key>`
 
->>>>> Here is the directory structure in this sample. Your structure may be different.
+`STRIPE_SECRET_KEY=<replace-with-your-secret-key>`
 
-react-app/
-  .envexample
-  .clijson
-  .gitignore
-  app.js
-  package-lock.json
-  package.json
-  README.txt
-  server.js
-  client/
-  	.gitignore
-  	node_modules/ (* Author Note: For my demo to work, there are 2 similar node_modules folders *)
-  	package.json
-  	public/
-  		favicon.ico
-  		index.html
-  		robots.txt
-  	README.txt
-  	src/
-  		api.js
-  		App.css
-  		App.js
-  		components/
-  			CheckoutForm.css
-  			CheckoutForm.js
-  			DemoText.css
-  			DemoText.js
-  		index.css
-  		index.js
-  	yarn.lock
-  node_modules/
-  server/
+#### Here is the directory structure in this sample. Your structure may be different.
+
+* react-app/
+  * .envexample
+  * .clijson
+  * .gitignore
+  * app.js
+  * package-lock.json
+  * package.json
+  * README.txt
+  * server.js
+  * client/
+    * .gitignore
+  	* node_modules/ (_Author Note: For my demo to work, there are 2 similar node_modules folders_)
+  	* package.json
+  	* public/
+      * favicon.ico
+      * index.html
+      * robots.txt
+  	  * README.txt 
+  * src/
+    * api.js
+    * App.css
+  	* App.js
+  	* components/
+      * CheckoutForm.css
+  	  * CheckoutForm.js
+      * DemoText.css
+      * DemoText.js
+  	* index.css
+  	* index.js
+  	* yarn.lock
+  * node_modules/
+  * server/
 
 
 Running the API server
 ----------------------
->>>>> Go to the directory with the server.js file. In this case, this is the react-app/ folder.
+#### Go to the directory with the server.js file. In this case, this is the react-app/ folder.
 
->>>>> From the Terminal, start the server by typing:
+#### From the Terminal, start the server by typing:
 npm start
 
 Your terminal should respond with a message confirming the back-end server is up at http://localhost:4242/.
@@ -90,14 +91,14 @@ Your terminal should respond with a message confirming the back-end server is up
 
 Running the React client
 -------------------------
->>>>> Go to /client (example: react-app/client/)
+#### Go to /client (example: react-app/client/)
 
->>>>> From the Terminal, start the client by typing:
-sudo yarn (* Author Note: I had permissions issues.)
+#### From the Terminal, start the client by typing:
+sudo yarn (* Author Note: I had permissions issues. *)
 
 When prompted, enter the admin password for your client server.
 
->>>>> Type:
+#### Type:
 sudo yarn start 
 
 Your default browser should now open with the front-end being served from http://localhost:3000/.
@@ -107,10 +108,10 @@ Using the sample app
 ---------------------
 When running both servers, you are now ready to use the app running in http://localhost:3000.
 
->>>>> Enter your name and card details
+#### Enter your name and card details
 Make sure to use sample card numbers noted in Step 5 of Accept a Payment doc: https://stripe.com/docs/payments/accept-a-payment#web-test-integration
 
->>>>> Hit "Pay"
+#### Hit "Pay"
 
 Confirm post-payment events
 ---------------------------
