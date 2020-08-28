@@ -28,7 +28,7 @@ Follow the steps below to run locally.
 
 Manually clone and configure the sample. From a terminal screen, type:
 
-***** EDIT ***** git clone https://github.com/stripe-samples/react-app
+git clone https://github.com/oakye/stripe-paymentintents-sample.git
 
 >>>>> Copy the .envexample file into a file named .env in the folder of the server you want to use. For example:
 
